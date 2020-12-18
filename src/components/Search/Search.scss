@@ -1,12 +1,17 @@
 @import "../../styles/global.scss";
 
 .search {
-  @include displayFlex(column, space-evenly, flex-start);
+  @include displayFlex(column, center, center);
   padding: 0 30px;
   height: 120px;
   width: 100%;
   background-color: $primary-color;
   color: $light-color;
+
+  &__block {
+    @include displayFlex(column, space-evenly, flex-start);
+    max-width: 900px;
+  }
 
   &__content {
     @include displayFlex(row, space-around, center);

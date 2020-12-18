@@ -23,14 +23,16 @@ const options = {
 
 const Search = () => (
   <div className="search">
-    <div>
-      El empleo de tus sueños esta aquí
-    </div>
-    <div className="search__content">
-      <Input inputType="text" inputName="market-stall" inputPlaceHolder="Puesto que desempeño" />
-      <Select selectOptions={options.locations} selectName="location" selectPlaceHolder="Localidad" />
-      <Input inputType="text" inputName="salary-range" inputPlaceHolder="Rango de salario" />
-      <Button buttonTitle="Buscar"/>
+    <div className="search__block">
+      <div>
+        El empleo de tus sueños esta aquí
+      </div>
+      <div className="search__content">
+        <Input inputType="text" inputName="market-stall" inputPlaceHolder="Puesto que desempeño" />
+        <Select selectOptions={options.locations} selectName="location" selectPlaceHolder="Localidad" />
+        <Input inputType="text" inputName="salary-range" inputPlaceHolder="Rango de salario" />
+        <Button buttonTitle="Buscar"/>
+      </div>
     </div>
   </div>
 )

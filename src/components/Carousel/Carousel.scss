@@ -1,5 +1,9 @@
 @import "../../styles/global.scss";
 
+.carousel__block {
+  max-width: 1000px;
+}
+
 .carousel__title {
   padding: 10px 30px;
   width: 100%;
@@ -7,6 +11,6 @@
 }
 
 .carousel {
-  @include displayGrid(inline-grid, 1fr 1fr 1fr, 10px, center, center);
+  @include displayGrid(grid, 1fr 1fr 1fr, 20px, center, center);
   width: 100%;
 }
