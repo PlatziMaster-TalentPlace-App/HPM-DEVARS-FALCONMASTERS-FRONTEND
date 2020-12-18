@@ -2,11 +2,9 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './Header.scss'
 import Logo from '../Logo/Logo';
-import { RiDashboardLine } from "react-icons/ri";
-import { FaSearch } from "react-icons/fa";
-import { MdLocationSearching } from "react-icons/md";
+import { MdAccountCircle, MdNotifications } from "react-icons/md";
 
-const Header = () => {
+const Header = ({ login = true }) => {
     return (
         <header className="header">
             <Link to="/">
@@ -14,28 +12,36 @@ const Header = () => {
                 <Logo />
                 </figure>
             </Link>
-            <nav className="header__nav">
-            <ul>
-                <li>
-                    <Link>
-                        <i className="header__icons__dashboard"><RiDashboardLine/></i><span>Jobs</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link>
-                        <i className="header__icons__search"><FaSearch/></i><span>Buscar</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link>
-                        <i className="header__icons__search"><MdLocationSearching/></i><span>Postulaciones</span>
-                    </Link>
-                </li>
-            </ul>
-            </nav>
-            <Link to="" className="btn-session">
-                <button className="btn btn-outline-light btn-sm">INICIAR SESIÓN</button>
-            </Link>
+            <div className="header__main">
+              <div >
+                {
+                  !login ?
+                  <Link to="/" className="btn-session">
+                      <button className="btn btn-outline-light btn-sm">INICIAR SESIÓN</button>
+                  </Link>
+                  :
+                  <Link to="/">
+                    <div className="header__avatar">
+                      <div className="header__avatar__user">
+                        <span className="header__avatar__user__name">USUARIO</span>
+                        <span className="header__avatar__user__career">FRONTEND DEVELOPER</span>
+                      </div>
+                      <i className="header__avatar__icons__dashboard">
+                        <MdAccountCircle />
+                      </i>
+                    </div>
+                  </Link>
+                }
+              </div>
+              {
+                login &&
+                  <Link to="/">
+                    <i className="header__avatar__icons__dashboard">
+                      <MdNotifications />
+                    </i>
+                  </Link>
+              }
+            </div>
         </header>
     )
 }

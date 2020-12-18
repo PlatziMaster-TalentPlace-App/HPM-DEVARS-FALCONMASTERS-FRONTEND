@@ -1,17 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
 
-$primary-color: #243a45;
-$secondary-color: #88c544;
-$font-color-primary: #30302f;
+$primary-color: #182c3f;
+$secondary-color: #98ca3f;
+$font-color-primary: #4c4c4c;
 $light-color: #ffffff;
 $font-primary: "Open Sans", sans-serif;
 $hover: #d4e5ae;
+$color-fullstack: #ff5652;
+$color-frontend: #33435b;
+$color-backend: #5c5555;
+$color-datascience: #5382eb;
 
 @mixin displayFlex($direction: row, $justify: center, $align: center) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+
+@mixin displayGrid(
+  $display: grid,
+  $gridTemplateColumns: 1fr 1fr 1fr,
+  $gridGap: 2px,
+  $justify: center,
+  $align: center
+) {
+  display: $display;
+  grid-template-columns: $gridTemplateColumns;
+  grid-gap: $gridGap;
+  align-items: $align;
+  justify-content: $justify;
+  justify-items: center;
 }
 
 @mixin font($size: 1em, $color: $font-color-primary, $weight: 100) {

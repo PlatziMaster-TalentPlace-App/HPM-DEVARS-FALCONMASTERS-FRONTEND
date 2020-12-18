@@ -1,0 +1,15 @@
+@import "../../styles/global.scss";
+
+.list {
+  @include displayGrid(grid, 1fr 1fr 1fr 1fr, 2px, space-around, center);
+  width: 100%;
+  height: 40px;
+  background-color: $light-color;
+  border-bottom: 1px solid #e0e0e0;
+  @include font(1em, $font-color-primary, 600);
+
+  &:hover {
+    box-shadow: 0 2px 6px $color-backend;
+    transform: scale(1.05);
+  }
+}

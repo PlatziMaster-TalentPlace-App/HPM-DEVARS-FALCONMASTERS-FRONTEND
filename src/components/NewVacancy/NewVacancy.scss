@@ -1,0 +1,32 @@
+@import "../../styles/global.scss";
+
+.card__article {
+  padding: 6px 10px;
+  width: 260px;
+  height: 175px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px $color-backend;
+
+  &__header {
+    height: 36px;
+    text-align: right;
+  }
+
+  &__section {
+    @include displayFlex(column, space-evenly, center);
+    height: 94px;
+
+    p {
+      @include displayFlex(column, center, center);
+      @include font(0.8em, $font-color-primary, 600);
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+
+  &__footer {
+    height: 30px;
+    text-align: center;
+  }
+}

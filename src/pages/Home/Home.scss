@@ -1,0 +1,6 @@
+@import "../../styles/global.scss";
+
+.home {
+  @include displayFlex(column, center, center);
+  padding: 20px;
+}

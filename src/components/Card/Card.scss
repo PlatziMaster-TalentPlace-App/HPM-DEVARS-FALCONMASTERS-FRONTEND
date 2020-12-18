@@ -1,0 +1,10 @@
+@import "../../styles/global.scss";
+
+.card__article {
+  padding: 6px 10px;
+  width: 260px;
+  height: 175px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px $color-backend;
+}

@@ -1,0 +1,16 @@
+@import "../../styles/global.scss";
+
+.carousel {
+  max-width: 1000px;
+
+  &__title {
+    padding: 10px 30px;
+    width: 100%;
+    @include font(1em, $font-color-primary, 600);
+  }
+
+  &__cards {
+    @include displayGrid(grid, 1fr 1fr 1fr, 20px, center, center);
+    width: 100%;
+  }
+}

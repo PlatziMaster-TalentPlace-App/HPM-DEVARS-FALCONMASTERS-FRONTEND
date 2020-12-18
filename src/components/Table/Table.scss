@@ -1,0 +1,21 @@
+@import "../../styles/global.scss";
+
+.table {
+  &__header {
+    @include displayFlex(column, center, flex-start);
+    margin-left: 20px;
+    height: 60px;
+    @include font(1em, $font-color-primary, 600);
+  }
+
+  &__section {
+    @include displayFlex(column, flex-start, center);
+    height: 340px;
+  }
+
+  &__footer {
+    @include displayFlex(column, space-evenly, center);
+    height: 50px;
+    text-align: center;
+  }
+}
