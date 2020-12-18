@@ -1,7 +1,7 @@
 @import "../../styles/global.scss";
 
 .carousel {
-  max-width: 1000px;
+  max-width: 1200px;
 
   &__title {
     padding: 10px 30px;
@@ -10,7 +10,7 @@
   }
 
   &__cards {
-    @include displayGrid(grid, 1fr 1fr 1fr, 20px, center, center);
+    @include displayFlex(row, center, center);
     width: 100%;
   }
 }
