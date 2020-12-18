@@ -34,6 +34,16 @@ const options = {
       salary: '3,000',
       coin: 'DLL',
       status: '¡Te seleccionarón!'
+    },
+    {
+      id: 4,
+      career: 'DATA SCIENCE',
+      name: 'PLATZI',
+      urlImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Platzi.jpg/800px-Platzi.jpg',
+      vacant: 'Data Science',
+      salary: '100,000',
+      coin: 'MXN',
+      status: 'En proceso'
     }
   ]
 }
@@ -42,8 +52,10 @@ const Home = () => {
   return (
     <div className="home">
       <Carousel title="NUEVAS VACANTES" options={options.vacancies} buttonTitle="POSTULARME" />
-      <Table title="VACANTES DISPONIBLES" options={options.vacancies} buttonTitle="POSTULARME" listGridTemplateColumns="1fr 1fr 1fr 1fr" />
-      <Table application="true" title="MIS ULTIMAS APLICACIONES" cardWidth="400px" options={options.vacancies} listGridTemplateColumns="1fr 1fr 1fr"/>
+      <div className="home__tables">
+        <Table title="VACANTES DISPONIBLES" options={options.vacancies} buttonTitle="POSTULARME" listGridTemplateColumns="1fr 1fr 1fr 1fr" />
+        <Table application="true" title="MIS ULTIMAS APLICACIONES" cardWidth="400px" options={options.vacancies} listGridTemplateColumns="1fr 1fr 1fr"/>
+      </div>
     </div>
   )
 }
