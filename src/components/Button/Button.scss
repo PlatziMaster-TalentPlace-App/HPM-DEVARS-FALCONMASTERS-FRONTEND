@@ -1,0 +1,12 @@
+@import "../../styles/global.scss";
+
+.button {
+  margin: 0 10px;
+  padding: 6px 10px;
+  width: 200px;
+  height: 42px;
+  @include font(1em, $light-color, 500);
+  background-color: $secondary-color;
+  border: none;
+  border-radius: 6px;
+}
