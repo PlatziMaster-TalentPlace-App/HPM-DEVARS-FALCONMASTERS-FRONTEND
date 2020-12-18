@@ -7,13 +7,13 @@ const Card = ({ career, image, vacant, salary, coin, title } ) => (
     <header className="card__article__header">
       <span>{career}</span>
     </header>
-    <body className="card__article__body">
+    <section className="card__article__section">
       <img src={image} alt={vacant}/>
       <p>
         {vacant}
         <span>$ {salary} {coin}</span>
       </p>
-    </body>
+    </section>
     <footer className="card__article__footer">
       <Button buttonTitle={title} buttonWidth="auto" buttonHeight="auto" buttonFontSize="0.6em" />
     </footer>

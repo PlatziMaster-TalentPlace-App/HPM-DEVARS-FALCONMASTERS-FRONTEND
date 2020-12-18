@@ -1,0 +1,12 @@
+@import "../../styles/global.scss";
+
+.carousel__title {
+  padding: 10px 30px;
+  width: 100%;
+  @include font(1em, $font-color-primary, 600);
+}
+
+.carousel {
+  @include displayGrid(inline-grid, 1fr 1fr 1fr, 10px, center, center);
+  width: 100%;
+}

@@ -18,6 +18,21 @@ $color-datascience: #5382eb;
   align-items: $align;
 }
 
+@mixin displayGrid(
+  $display: grid,
+  $gridTemplateColumns: 1fr 1fr 1fr,
+  $gridGap: 2px,
+  $justify: center,
+  $align: center
+) {
+  display: $display;
+  grid-template-columns: $gridTemplateColumns;
+  grid-gap: $gridGap;
+  align-items: $align;
+  justify-content: $justify;
+  justify-items: $justify;
+}
+
 @mixin font($size: 1em, $color: $font-color-primary, $weight: 100) {
   font-family: $font-primary;
   font-size: $size;
