@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+
+$primary-color: #243a45;
+$secondary-color: #88c544;
+$font-color-primary: #30302f;
+$light-color: #ffffff;
+$font-primary: "Open Sans", sans-serif;
+$hover: #d4e5ae;
+
+@mixin displayFlex($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font($size: 1em, $color: $font-color-primary, $weight: 100) {
+  font-family: $font-primary;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
