@@ -2,17 +2,20 @@
 
 .table {
   &__header {
-    height: 36px;
-    text-align: left;
+    @include displayFlex(column, center, flex-start);
+    margin-left: 20px;
+    height: 60px;
+    @include font(1em, $font-color-primary, 600);
   }
 
   &__section {
-    @include displayFlex(column, space-evenly, center);
-    height: 260px;
+    @include displayFlex(column, flex-start, center);
+    height: 340px;
   }
 
   &__footer {
-    height: 30px;
+    @include displayFlex(column, space-evenly, center);
+    height: 50px;
     text-align: center;
   }
 }

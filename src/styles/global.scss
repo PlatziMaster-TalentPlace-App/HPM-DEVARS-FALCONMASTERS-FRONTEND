@@ -30,7 +30,7 @@ $color-datascience: #5382eb;
   grid-gap: $gridGap;
   align-items: $align;
   justify-content: $justify;
-  justify-items: $justify;
+  justify-items: center;
 }
 
 @mixin font($size: 1em, $color: $font-color-primary, $weight: 100) {

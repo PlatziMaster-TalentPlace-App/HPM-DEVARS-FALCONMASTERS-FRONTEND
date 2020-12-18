@@ -5,7 +5,7 @@ import Label from '../Label/Label'
 import Image from '../Image/Image'
 import Button from '../Button/Button'
 
-const NewVacancy = ({ career, image, vacant, salary, coin, title } ) => (
+const NewVacancy = ({ career, image, vacant, salary, coin, buttonTitle } ) => (
   <Card>
     <header className="card__article__header">
       <Label career={career} />
@@ -18,7 +18,7 @@ const NewVacancy = ({ career, image, vacant, salary, coin, title } ) => (
       </p>
     </section>
     <footer className="card__article__footer">
-      <Button buttonTitle={title} buttonWidth="auto" buttonHeight="auto" buttonFontSize="0.6em" />
+      <Button buttonTitle={buttonTitle} buttonWidth="auto" buttonHeight="auto" buttonFontSize="0.6em" />
     </footer>
   </Card>
 )
