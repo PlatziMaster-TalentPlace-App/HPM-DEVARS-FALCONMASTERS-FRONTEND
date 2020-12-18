@@ -1,4 +1,4 @@
-# Platzi-Master-TP-Frontend
+# HPM-DEVARS-FALCONMASTERS-FRONTEND
 
 Platzi Master TP is an App to help students, coachs and managers to find, and recive postulations of jobs availables in Platzi Master program.
 
