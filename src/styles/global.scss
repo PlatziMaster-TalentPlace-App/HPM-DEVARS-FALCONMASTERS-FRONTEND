@@ -6,6 +6,10 @@ $font-color-primary: #4c4c4c;
 $light-color: #ffffff;
 $font-primary: "Open Sans", sans-serif;
 $hover: #d4e5ae;
+$color-fullstack: #ff5652;
+$color-frontend: #33435b;
+$color-backend: #5c5555;
+$color-datascience: #5382eb;
 
 @mixin displayFlex($direction: row, $justify: center, $align: center) {
   display: flex;

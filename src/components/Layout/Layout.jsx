@@ -5,14 +5,14 @@ import Footer from '../Footer/Footer'
 import './Layout.scss'
 
 const Layout = ({children}) => (
-  <div>
+  <>
     <Header/>
     <Search />
-      <section>
-        {children}
-      </section>
+    <section>
+      {children}
+    </section>
     <Footer/>
-  </div>
+  </>
 )
 
 export default Layout

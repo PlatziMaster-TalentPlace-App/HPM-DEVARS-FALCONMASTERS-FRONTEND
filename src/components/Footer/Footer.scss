@@ -1,8 +1,6 @@
 @import "../../styles/global.scss";
 
 .footer {
-  position: absolute;
-  bottom: 0;
   @include displayFlex(row, space-between, center);
   padding: 0 30px;
   width: 100%;

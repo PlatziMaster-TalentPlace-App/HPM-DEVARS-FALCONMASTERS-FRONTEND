@@ -30,7 +30,7 @@ const Search = () => (
       <Input inputType="text" inputName="market-stall" inputPlaceHolder="Puesto que desempeño" />
       <Select selectOptions={options.locations} selectName="location" selectPlaceHolder="Localidad" />
       <Input inputType="text" inputName="salary-range" inputPlaceHolder="Rango de salario" />
-      <Button buttonType="button"/>
+      <Button buttonTitle="Buscar"/>
     </div>
   </div>
 )
