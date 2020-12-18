@@ -6,7 +6,7 @@ import { MdAccountCircle, MdNotifications } from "react-icons/md";
 
 const Header = ({ login = true }) => {
     return (
-        <header className="header header_app">
+        <header className="header">
             <Link to="/">
                 <figure className="header__logo">
                 <Logo />
