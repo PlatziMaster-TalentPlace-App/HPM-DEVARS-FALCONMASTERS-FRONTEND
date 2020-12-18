@@ -1,0 +1,8 @@
+@import "../../styles/global.scss";
+
+.label {
+  @include font(0.6em, $light-color, 600);
+  padding: 2px 10px;
+  background-color: $color-fullstack;
+  border-radius: 6px;
+}

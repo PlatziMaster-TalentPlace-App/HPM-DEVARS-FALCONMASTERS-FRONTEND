@@ -5,7 +5,7 @@ import Carousel from '../../components/Carousel/Carousel'
 const Home = () => {
   return (
     <div className="home">
-      <Carousel />
+      <Carousel title="NUEVAS VACANTES"/>
     </div>
   )
 }
