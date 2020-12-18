@@ -3,7 +3,7 @@ import './Footer.scss'
 import Logo from '../Logo/Logo';
 
 const Footer = () => (
-    <footer className="footer">
+    <footer className="footer footer_app">
         <div className="header__line"/>
         <h1>PLATZI INC. TODOS LOS DERECHOS RESERVADOS. PLATAFORMA PARA USO INTERNO.</h1>
         <figure className="header__logo">

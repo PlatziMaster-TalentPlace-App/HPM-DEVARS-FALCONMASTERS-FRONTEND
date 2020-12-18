@@ -6,12 +6,15 @@ import './Layout.scss'
 
 const Layout = ({children}) => (
   <>
+  <div className="layout">
     <Header/>
     <Search />
-    <section>
+    <section className="section_app">
       {children}
     </section>
     <Footer/>
+  </div>
+    
   </>
 )
 
