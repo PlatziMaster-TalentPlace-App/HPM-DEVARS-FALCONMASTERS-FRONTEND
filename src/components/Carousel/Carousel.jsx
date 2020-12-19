@@ -10,7 +10,7 @@ const Carousel = ({title, options, buttonTitle}) => (
     <div className="carousel__cards">
       {
         options.map(option => (
-          <NewVacancy key={option.id} career={option.career} image={option.urlImage} vacant={option.vacant} salary={option.salary} coin={option.coin} buttonTitle={buttonTitle} />
+          <NewVacancy key={option._id} career={option.branch} image={option.urlImage} vacant={option.position} salary={option.salary} coin={option.coin} buttonTitle={buttonTitle} />
         ))
       }
     </div>

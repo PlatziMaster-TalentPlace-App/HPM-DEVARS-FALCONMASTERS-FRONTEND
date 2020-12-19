@@ -6,5 +6,6 @@ body {
 }
 
 .section-app {
+  @include displayFlex(row, center, center);
   background-color: $background-color;
 }
