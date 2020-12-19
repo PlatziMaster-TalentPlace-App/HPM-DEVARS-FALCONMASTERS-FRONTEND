@@ -6,7 +6,7 @@ import Image from "../Image/Image";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 
-const NewVacancy = ({ career, image, vacant, salary, coin, buttonTitle }) => (
+const NewVacancy = ({ id, career, image, vacant, salary, coin, buttonTitle }) => (
   <Card cardWidth="250px" cardHeight="300px" cardMinWidth="250px">
     <div className="newvacancy">
       <header className="card__article__header">
@@ -22,7 +22,7 @@ const NewVacancy = ({ career, image, vacant, salary, coin, buttonTitle }) => (
         </p>
       </section>
       <footer className="card__article__footer">
-        <Link to="/vacant">
+        <Link key={id} to={`/vacant/${id}`}>
           <Button
             buttonTitle={buttonTitle}
             buttonWidth="auto"
