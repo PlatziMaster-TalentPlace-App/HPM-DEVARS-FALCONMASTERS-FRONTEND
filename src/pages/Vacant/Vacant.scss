@@ -20,6 +20,9 @@
     &--col1 {
       width: 40%;
     }
+    &--col2 {
+        width: 40%;
+    }
   }
   &__button {
       padding: 16px 0;
@@ -82,10 +85,15 @@
     list-style: none;
 }
 
-.body, .body ul {
+.body {
     font-family: $font-primary;
     font-size: 14px;
     list-style: none;
+    text-align: justify;
+}
+
+.offer__title {
+    margin-top: 16px;
 }
 
 .offer__list ul {
