@@ -23,7 +23,7 @@ const Message = () => {
     <div className="message__vacancies">
       <Card cardWidth="900px" cardHeight="auto">
         <section className="message__vacancies__section">
-          <div className="message__vacancies__section__message">¡Felicidades! te has postulado con éxito en la vacante {messages.position} de {messages.company}, un coach lo revisara en breve.</div>
+          <div className="message__vacancies__section__message">¡Felicidades! te has postulado con éxito en la vacante <span className="message__vacancies__section__message__span">{messages.position}</span> de <span className="message__vacancies__section__message__span">{messages.company}</span>, un coach lo revisara en breve.</div>
           <Link key={id} to={`/`}>
             <Button buttonTitle="CERRAR"/>
           </Link>

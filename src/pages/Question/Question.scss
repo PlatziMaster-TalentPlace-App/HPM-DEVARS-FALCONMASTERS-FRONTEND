@@ -17,6 +17,14 @@
   &__section {
     @include displayFlex(column, space-evenly, center);
 
+    &__title {
+      @include font(1em, $font-color-primary, 600);
+    }
+
+    &__question {
+      @include font(1em, $secondary-color, 600);
+    }
+
     &__avatar {
       @include displayFlex(row, space-around, center);
       margin-top: 20px;

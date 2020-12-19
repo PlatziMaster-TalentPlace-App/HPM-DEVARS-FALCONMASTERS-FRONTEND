@@ -28,8 +28,8 @@ const Question = () => {
           </div>
         </header>
         <section className="question__vacancies__section">
-          <div>EL CONTRATANTE QUIERE HACERTE UNA PREGUNTA</div>
-          <label>{questions.applicantQuestion}</label>
+          <div className="question__vacancies__section__title">EL CONTRATANTE QUIERE HACERTE UNA PREGUNTA</div>
+          <label className="question__vacancies__section__question">{questions.applicantQuestion}</label>
           <textarea className="question__vacancies__section__text" />
           <div className="question__vacancies__section__buttons">
             <div className="question__vacancies__section__button">
