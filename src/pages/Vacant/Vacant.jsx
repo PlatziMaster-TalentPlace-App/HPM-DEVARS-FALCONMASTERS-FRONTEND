@@ -15,7 +15,6 @@ const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
   const obtenerDatos = async () => {
     const url = `https://hpm-devars-falconmasters-backend.vercel.app/api/vacancies/${id}`;
     const data = await Axios.get(url);
-    console.log(data.data.data)
     setVacancies(data.data.data)
   }
   
