@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Home.scss'
 import Carousel from '../../components/Carousel/Carousel'
 import Table from '../../components/Table/Table'
@@ -54,6 +54,15 @@ const options = {
 };
 
 const Home = () => {
+
+  const [jobVacancies, setJobVacancies] = useState([]);
+
+  useEffect(() =>{
+    fetch('https://hpm-devars-falconmasters-backend-1toe9ysiq.vercel.app//api/vacancies')
+    .then( response => response.json())
+    .then(data => setJobVacancies(data.results))
+  },[])
+
   return (
     <div className="home">
       <Banner ancho="100px"/>
