@@ -6,20 +6,23 @@ import Image from '../Image/Image'
 import Button from '../Button/Button'
 
 const NewVacancy = ({ career, image, vacant, salary, coin, buttonTitle } ) => (
-  <Card>
-    <header className="card__article__header">
-      <Label career={career} />
-    </header>
-    <section className="card__article__section">
-      <Image imgSrc={image} imgAlt={vacant} imgHeight="50px" />
-      <p>
-        {vacant}
-        <span>$ {salary} {coin}</span>
-      </p>
-    </section>
-    <footer className="card__article__footer">
-      <Button buttonTitle={buttonTitle} buttonWidth="auto" buttonHeight="auto" buttonFontSize="0.6em" />
-    </footer>
+  <Card cardWidth="250px" cardHeight="300px" cardMinWidth="250px" >
+    <div className="newvacancy">
+        <header className="card__article__header">
+        <Label career={career} />
+      </header>
+      <section className="card__article__section">
+        <Image imgSrc={image} imgAlt={vacant} imgHeight="50px" />
+        <p>
+          {vacant}
+          <span>$ {salary} {coin}</span>
+        </p>
+      </section>
+      <footer className="card__article__footer">
+        <Button buttonTitle={buttonTitle} buttonWidth="auto" buttonHeight="auto" buttonFontSize="0.6em" />
+      </footer>
+    </div>
+    
   </Card>
 )
 
