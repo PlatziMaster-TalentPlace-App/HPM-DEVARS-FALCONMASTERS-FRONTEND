@@ -1,7 +1,11 @@
 @import "../../styles/global.scss";
 
 .carousel {
+  width: 100%;
   max-width: 1200px;
+  overflow: hidden;
+  overflow-x: scroll;
+  padding: 20px 0;
 
   &__title {
     padding: 10px 30px;
@@ -10,7 +14,24 @@
   }
 
   &__cards {
-    @include displayFlex(row, center, center);
+    @include displayFlex(row, start, center);
     width: 100%;
+  }
+
+  // navegador del carrusel
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+  }
+  &::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
   }
 }
