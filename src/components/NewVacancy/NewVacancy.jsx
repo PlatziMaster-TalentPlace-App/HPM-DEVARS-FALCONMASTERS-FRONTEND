@@ -1,11 +1,12 @@
-import React from 'react'
-import './NewVacancy.scss'
-import Card from '../Card/Card'
-import Label from '../Label/Label'
-import Image from '../Image/Image'
-import Button from '../Button/Button'
+import React from "react";
+import "./NewVacancy.scss";
+import Card from "../Card/Card";
+import Label from "../Label/Label";
+import Image from "../Image/Image";
+import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
-const NewVacancy = ({ career, image, vacant, salary, coin, buttonTitle } ) => (
+const NewVacancy = ({ career, image, vacant, salary, coin, buttonTitle }) => (
   <Card>
     <header className="card__article__header">
       <Label career={career} />
@@ -14,13 +15,22 @@ const NewVacancy = ({ career, image, vacant, salary, coin, buttonTitle } ) => (
       <Image imgSrc={image} imgAlt={vacant} imgHeight="50px" />
       <p>
         {vacant}
-        <span>$ {salary} {coin}</span>
+        <span>
+          $ {salary} {coin}
+        </span>
       </p>
     </section>
     <footer className="card__article__footer">
-      <Button buttonTitle={buttonTitle} buttonWidth="auto" buttonHeight="auto" buttonFontSize="0.6em" />
+      <Link to='/vacant'>
+        <Button
+          buttonTitle={buttonTitle}
+          buttonWidth="auto"
+          buttonHeight="auto"
+          buttonFontSize="0.6em"
+        />
+      </Link>
     </footer>
   </Card>
-)
+);
 
-export default NewVacancy
+export default NewVacancy;

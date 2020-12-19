@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../components/Card/Card";
+import Button from "../../components/Button/Button";
 
 import "./Vacant.scss";
 
@@ -86,11 +87,15 @@ const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
         <section className="card__details">
           <div className="card__details--col1">
             <h4 className="benefit__title">{vacant.details.benefit[0]}</h4>
-            <p className="benefit__description body">{vacant.details.benefit[1]}</p>
+            <p className="benefit__description body">
+              {vacant.details.benefit[1]}
+            </p>
             <h4 className="description__title">
               {vacant.details.description[0]}
             </h4>
-            <p className="description__body body">{vacant.details.description[1]}</p>
+            <p className="description__body body">
+              {vacant.details.description[1]}
+            </p>
             <h4 className="requirements__title">
               {vacant.details.requirements[0]}
             </h4>
@@ -106,25 +111,38 @@ const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
             </div>
           </div>
           <div className="card__details--col2">
-              <h4 className="aptitudes__title">{vacant.details.aptitude[0]}</h4>
-              <div className="aptitudes__list body">
-                  <ul>
-                      {vacant.details.aptitude.map( item => <li>{item}</li> )}
-                  </ul>
-              </div>
-              <h4 className="skills__title">{vacant.details.skill[0]}</h4>
-              <div className="skills_list body">
-                  <ul>
-                      {vacant.details.skill.map( item => <li>{item}</li> )}
-                  </ul>
-              </div>
-              <h4 className="offer__title">{vacant.details.offer[0]}</h4>
-              <div className="offer__list body">
-                  <ul>
-                      {vacant.details.offer.map( item => <li>{item}</li> )}
-                  </ul>
-              </div>
+            <h4 className="aptitudes__title">{vacant.details.aptitude[0]}</h4>
+            <div className="aptitudes__list body">
+              <ul>
+                {vacant.details.aptitude.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <h4 className="skills__title">{vacant.details.skill[0]}</h4>
+            <div className="skills_list body">
+              <ul>
+                {vacant.details.skill.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <h4 className="offer__title">{vacant.details.offer[0]}</h4>
+            <div className="offer__list body">
+              <ul>
+                {vacant.details.offer.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
+        </section>
+        <section className="card__button">
+          <Button buttonTitle="Postularme" />
+          <p className="card__button--footer">
+            Recibirás un correo de confirmación por parte de Shaily Zappa que te presentará con la empresa
+            que te postulaste
+          </p>
         </section>
       </Card>
     </section>
