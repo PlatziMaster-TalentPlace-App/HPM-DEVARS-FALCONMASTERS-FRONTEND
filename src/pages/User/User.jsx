@@ -49,6 +49,59 @@ const User = () => {
     ]
   }
 
+  const optionsTracing = {
+    tracings: [
+      {
+        userId: "1",
+        name: "Terminar Learning Path",
+        description: "Durante los 3 meses intensivos se debera de terminar el Learning Path asignado por tu coach.",
+        endDate: "14/04/2020"
+      },
+      {
+          userId: "2",
+          name: "Realiza tu proyecto",
+          description: "Has pasado tu etapa intensiva, ahora es necesario poner en practica todo lo que sabes mediante un proyecto en equipo.",
+          endDate: "10/06/2020"
+      },
+      {
+          userId: "3",
+          name: "Prepara tu CV y LinkendIn.",
+          description: "La etapa productiva comienza ahora, es tiempo de estar preparado.",
+          endDate: "29/07/2020"
+      },
+      {
+          userId: "4",
+          name: "Obten tu primer empleo",
+          description: "Felicidades haz alcanzado tu primer empleo con Platzi Master.",
+          endDate: "20/12/2020"
+      },
+      {
+          userId: "5",
+          name: "Mejora tu Ingles",
+          description: "Da el siguiente paso aprendiendo ingles.",
+          endDate: "20/12/2020"
+      },
+      {
+          userId: "6",
+          name: "Mejorar Pruebas Unitarias",
+          description: "Las pruebas unitarias",
+          endDate: "20/12/2020"
+      },
+      {
+          userId: "7",
+          name: "Aprender una plataforma en la nube",
+          description: "Se realizara la ruta de AWS para mejorar el perfil profesional.",
+          endDate: "20/12/2020"
+      },
+      {
+          userId: "8",
+          name: "Mejora tu empleo",
+          description: "Despues de tanto esfuerzo ya es momento de buscar algo mejor.",
+          endDate: "20/12/2020"
+      }
+    ]
+  }
+
   return (
     <div className="user">
       <Card cardWidth="100%" cardHeight="auto">
@@ -129,6 +182,15 @@ const User = () => {
             Mi link de linkedin
           </div>
         </div>
+      </Card>
+      <Card>
+        {
+          optionsTracing.tracings.map(tracing => (
+            <div key={tracing.id}>
+              {tracing.name} {tracing.description}
+            </div>
+          ))
+        }
       </Card>
     </div>
   )

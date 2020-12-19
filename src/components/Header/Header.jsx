@@ -4,6 +4,7 @@ import './Header.scss'
 import Logo from '../Logo/Logo';
 import { MdAccountCircle, MdNotifications } from "react-icons/md";
 import { AiOutlinePlus } from "react-icons/ai"
+import { FaMagic } from "react-icons/fa";
 
 const Header = ({ login = true }) => {
     return (
@@ -40,8 +41,15 @@ const Header = ({ login = true }) => {
                     <i className="header__avatar__icons__dashboard">
                       <AiOutlinePlus />
                     </i>
+                    
                   </Link>
+                  
               }
+              <Link to="/coach-management">
+                  <i className="header__avatar__icons__magic">
+                    <FaMagic/>
+                  </i>
+              </Link>
             </div>
         </header>
     )

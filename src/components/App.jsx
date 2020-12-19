@@ -7,6 +7,8 @@ import RegistrationVacancies from '../pages/RegistrationVacancies/RegistrationVa
 import Error404 from '../pages/Error404/Error404'
 import Layout from '../components/Layout/Layout'
 import Vacant from '../pages/Vacant/Vacant';
+import Question from '../pages/Question/Question';
+import Message from '../pages/Message/Message'
 import CoachManagement from '../pages/CoachManagement/CoachManagement';
 
 import AppContext from '../context/AppContext'
@@ -28,6 +30,8 @@ const App = () => {
                       <Route exact path="/" component={Home}/>
                       <Route exact path="/login" component={Login}/>
                       <Route exact path="/vacant/:id" component={Vacant} />
+                      <Route exact path="/question/:id" component={Question}/>
+                      <Route exact path="/message/:id" component={Message}/>
                       <Route exact path="/user" component={User}/>
                       <Route exact path="/registration-vacancies" component={RegistrationVacancies}/>
                       <Route exact path="/coach-management" component={coachManagement}/>

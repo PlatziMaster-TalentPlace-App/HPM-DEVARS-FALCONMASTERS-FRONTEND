@@ -33,6 +33,12 @@
         font-size: 2em;
         color: $light-color;
       }
+      &__magic {
+        @include displayFlex(column, center, center);
+        padding: 0 10px;
+        font-size: 1.5em;
+        color: $light-color;
+      }
     }
   }
 }
