@@ -19,6 +19,7 @@ const Table = ({
       {options.map((option) => (
         <List
           key={option._id}
+          id={option._id}
           application={application}
           career={option.branch}
           name={option.company}
