@@ -1,0 +1,7 @@
+@import "../../styles/global.scss";
+
+.login {
+  @include displayFlex(column, space-evenly, center);
+  width: 100%;
+  height: 100%;
+}
