@@ -1,6 +1,7 @@
 @import "../../styles/global.scss";
 
 .registration__vacancies {
+  @include displayFlex(row, center, center);
   padding: 20px;
   width: 100%;
   max-width: 1200px;
