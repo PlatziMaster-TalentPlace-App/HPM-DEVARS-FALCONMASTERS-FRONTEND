@@ -25,7 +25,7 @@ const Carousel = ({title, options, buttonTitle, searchTextCountry, searchTextDev
           {
             // filteredJobs
             options.map(option => (
-              <NewVacancy key={option._id} career={option.branch} image={option.urlImage} vacant={option.position} salary={option.salary} coin={option.coin} buttonTitle={buttonTitle} />
+              <NewVacancy key={option._id} id={option._id} career={option.branch} image={option.urlImage} vacant={option.position} salary={option.salary} coin={option.coin} buttonTitle={buttonTitle} />
             ))
           }
         </div>
