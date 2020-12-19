@@ -24,7 +24,7 @@ const App = () => {
                   <Switch>
                       <Route exact path="/" component={Home}/>
                       <Route exact path="/login" component={Login}/>
-                      <Route exact path="/vacant" component={Vacant} />
+                      <Route exact path="/vacant/(:detailId)" component={Vacant} />
                       <Route exact path="/user" component={User}/>
                       <Route exact path="/registration-vacancies" component={RegistrationVacancies}/>
                       <Route component={Error404} />

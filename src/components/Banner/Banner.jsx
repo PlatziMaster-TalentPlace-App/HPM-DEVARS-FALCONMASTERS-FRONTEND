@@ -14,7 +14,7 @@ const Banner = (props) => {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    marginBottom: '30px',
+    
 }  
     return (
         <main style={bannerStyle}>

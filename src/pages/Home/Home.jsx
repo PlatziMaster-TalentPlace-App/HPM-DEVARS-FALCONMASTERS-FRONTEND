@@ -9,7 +9,6 @@ const Home = () => {
   const { vacancies } = useContext(AppContext)
   return (
     <div className="home">
-      <Banner ancho="100px"/>
       <Carousel title="NUEVAS VACANTES" options={vacancies.data} buttonTitle="POSTULARME" />
       <div className="home__tables">
         <Table
