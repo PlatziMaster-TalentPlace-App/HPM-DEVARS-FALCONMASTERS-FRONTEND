@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Select.scss'
 import { MdSearch, MdFlag } from "react-icons/md";
 import { FaMoneyBillWaveAlt } from "react-icons/fa";
 
-const Select = ({ selectOptions, selectRef, selectName, searchText, selectPlaceHolder, selectOnChange} ) => {
+const Select = ({ selectOptions, selectRef, selectName, selectPlaceHolder} ) => {
+
+  const [searchTextCountry, setSearchTextCountry] = useState('');
+  
+  console.log(searchTextCountry)
 
   return (<div className="select__content">
     { selectName==="market-stall" && <MdSearch className="select__icon"/> }
@@ -12,9 +16,10 @@ const Select = ({ selectOptions, selectRef, selectName, searchText, selectPlaceH
     <select 
         ref={selectRef} 
         name={selectName} 
-        value={searchText}
+        value={searchTextCountry}
         placeholder={selectPlaceHolder} 
         className="select" 
+        onChange={(e) =>{setSearchTextCountry(e.target.value);}}  
         required
         >
           <option value="">{selectPlaceHolder}</option>

@@ -10,19 +10,6 @@ import AppContext from '../../context/AppContext'
 
 const Search = () => {
   const { vacancies } = useContext(AppContext)
-  const [searchText, setSeachText] = useState('');
-
-    const handleSearch = async (value) => {
-    const searchQuery = await api.get('music/search', {
-      params: { search: value },
-    });
-    return searchQuery.data.data;
-  };
-
-  const handleSearchSubmit = async (e) => {
-    e.preventDefault();
-      console.log(searchText)
-  };
 
   return (
     <div className="search">
@@ -31,15 +18,22 @@ const Search = () => {
         El empleo de tus sueños esta aquí
       </div>
       <div >
-        <form onSubmit={handleSearchSubmit}  className="search__content">
+        <form className="search__content">
           <SelectDevelop 
               selectOptions={vacancies.data} 
               selectName="market-stall" 
-              selectPlaceHolder="Mi puesto" 
-              onSubmit={(e) =>{setSearchText(e.target.value);}} 
+              selectPlaceHolder="Mi puesto"
               />
-          <SelectCountry selectOptions={vacancies.data} selectName="location" selectPlaceHolder="Localidad"  onChange={(e) =>{setSearchText(e.target.value);}}  />
-          <SelectSalary selectOptions={vacancies.data} selectName="salary-range" selectPlaceHolder="Salario" onChange={(e) =>{setSearchText(e.target.value);}}  />
+          <SelectCountry 
+              selectOptions={vacancies.data} 
+              selectName="location" 
+              selectPlaceHolder="Localidad"  
+              />
+          <SelectSalary 
+              selectOptions={vacancies.data} 
+              selectName="salary-range" 
+              selectPlaceHolder="Salario" 
+              />
           <Button buttonTitle="Buscar"/>
         </form>
       </div>
