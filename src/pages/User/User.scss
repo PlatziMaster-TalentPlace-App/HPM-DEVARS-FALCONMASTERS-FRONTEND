@@ -53,4 +53,8 @@
       width: 160px;
     }
   }
+
+  &__tracing {
+    @include displayFlex(row, flex-start center);
+  }
 }
