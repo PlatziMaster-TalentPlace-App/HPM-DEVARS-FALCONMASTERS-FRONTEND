@@ -8,7 +8,7 @@ const Layout = ({children}) => (
   <>
     <Header/>
     <Search />
-    <section>
+    <section className="layout">
       {children}
     </section>
     <Footer/>
