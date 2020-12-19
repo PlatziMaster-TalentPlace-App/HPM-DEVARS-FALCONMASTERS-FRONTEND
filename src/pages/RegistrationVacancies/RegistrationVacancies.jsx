@@ -1,92 +1,37 @@
 import React from 'react'
 import './RegistrationVacancies.scss'
 import Card from '../../components/Card/Card'
-import Label from '../../components/Label/Label'
+import Input from '../../components/Input/Input'
+import Image from '../../components/Image/Image'
 import Button from '../../components/Button/Button'
-import { MdAccountCircle } from "react-icons/md";
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const RegistrationVacancies = () => {
   return (
     <div className="registration__vacancies">
-      <Card cardWidth="100%" cardHeight="auto">
-        <header className="user__header">
+      <Card cardWidth="900px" cardHeight="auto">
+        <header className="registration__vacancies__header">
           <div>
-            CURRICULUM
-          </div>
-          <div className="user__header__user">
-            Pedro Omar Cruz May
-            <span>
-              Frontend Developer
-            </span>
-          </div>
-          <div className="user__header__avatar">
-            <MdAccountCircle style={{ width: '2em', height: '2em' }}/>
+            ALTA DE VACANTES
           </div>
         </header>
-        <section className="user__section">
-          <div className="user__section__skills">
-            <div className="user__section__skills__title">SKILLS</div>
-            <div className="user__section__skills__options">
-              {
-                optionsSkills.skills.map(skill => (
-                  <Label key={skill.id} career={skill.name}/>
-                ))
-              }
+        <section className="registration__vacancies__section">
+          <div className="registration__vacancies__section__avatar">
+            <div>
+              <label>TITULO DEL PUESTO</label>
+              <Input inputType="text" inputBorder="1px solid black" />
+              <label>SUBTITULO DEL PUESTO (OPCIONAL)</label>
+              <Input inputType="text" inputBorder="1px solid black" />
+              <label>SALARIO OFRECIDO</label>
+              <Input inputType="text" inputBorder="1px solid black" />
+            </div>
+            <div>
+              <Image imgSrc="https://radiolaotra.com.ar/wp-content/uploads/2020/06/logo-platzi.jpg" imgAlt="Imagen de la Empresa" imgHeight="200px"/>
             </div>
           </div>
-          <div className="user__section__languages">
-            <div className="user__section__languages__title">SKILLS</div>
-            <div className="user__section__languages__options">
-              {
-                optionsLanguages.languages.map(language => (
-                  <Label key={language.id} career={language.name}/>
-                ))
-              }
-            </div>
-          </div>
+          <label>Descripcion</label>
+          <textarea className="registration__vacancies__section__text" />
+          <Button buttonTitle="ENVIAR"/>
         </section>
-      </Card>
-      <Card cardWidth="100%" cardHeight="auto">
-        <header className="user__header">
-          EXPERIENCIA LABORAL
-        </header>
-        <section className="user__section">
-          <div className="user__section__experience">
-            <div className="user__section__experience__title">2019 - Al día de hoy:</div>
-            <div className="user__section__experience__experience">
-              <span>Platzi master</span>
-              Quisque interdum libero eget vestibulum placerat. Maecenas dapibus mauris id tellus gravida dignissim. Integer pretium convallis leo, tincidunt viverra purus posuere in. Donec consequat consectetur augue semper rutrum.
-            </div>
-          </div>
-        </section>
-      </Card>
-      <Card cardWidth="100%" cardHeight="auto">
-        <header className="user__header">
-          EDUCACIÓN
-        </header>
-        <section className="user__section">
-          <div className="user__section__education">
-            <div className="user__section__education__title">2019 - Al día de hoy:</div>
-            <div className="user__section__education__experience">
-              <span>Platzi master</span>
-              Quisque interdum libero eget vestibulum placerat. Maecenas dapibus mauris id tellus gravida dignissim. Integer pretium convallis leo, tincidunt viverra purus posuere in. Donec consequat consectetur augue semper rutrum.
-            </div>
-          </div>
-        </section>
-      </Card>
-      <Card cardWidth="100%" cardHeight="auto">
-        <div className="user__contact">
-          <Button buttonTitle="SUBIR CURRICULUM" buttonWidth="auto" buttonHeight="auto" />
-          <div className="user__contact__social">
-            <AiFillGithub />
-            Mi link de Github
-          </div>
-          <div className="user__contact__social">
-            <AiFillLinkedin />
-            Mi link de linkedin
-          </div>
-        </div>
       </Card>
     </div>
   )
