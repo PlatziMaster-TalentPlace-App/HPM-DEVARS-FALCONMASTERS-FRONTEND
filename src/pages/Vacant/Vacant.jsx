@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button";
 import "./Vacant.scss";
 import { useParams } from 'react-router-dom'
 import Axios from 'axios'
+import { Link } from "react-router-dom";
 
 const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
   const { id } = useParams();
@@ -57,7 +58,9 @@ const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
           </div>
         </section>
         <section className="card__button">
-          <Button buttonTitle="Postularme" />
+          <Link key={id} to={`/question/${id}`}>
+            <Button buttonTitle="Postularme" />
+          </Link>
           <p className="card__button--footer">
             Recibirás un correo de confirmación por parte de Shaily Zappa que te presentará con la empresa
             que te postulaste
