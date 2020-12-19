@@ -101,12 +101,11 @@ const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
             </h4>
             <div className="requirements__list body">
               <ul>
-                {vacant.details.requirements.map((item, i) => {
-                  if (i === 1) {
-                    item.toUpperCase();
-                  }
-                  return <li>{item}</li>;
-                })}
+                {vacant.details.requirements
+                  .filter((item, i) => i !== 0)
+                  .map((item) => {
+                    return <li>{item}</li>;
+                  })}
               </ul>
             </div>
           </div>
@@ -114,25 +113,31 @@ const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
             <h4 className="aptitudes__title">{vacant.details.aptitude[0]}</h4>
             <div className="aptitudes__list body">
               <ul>
-                {vacant.details.aptitude.map((item) => (
-                  <li>{item}</li>
-                ))}
+                {vacant.details.aptitude
+                  .filter((item, i) => i !== 0)
+                  .map((item) => (
+                    <li>{item}</li>
+                  ))}
               </ul>
             </div>
             <h4 className="skills__title">{vacant.details.skill[0]}</h4>
             <div className="skills_list body">
               <ul>
-                {vacant.details.skill.map((item) => (
-                  <li>{item}</li>
-                ))}
+                {vacant.details.skill
+                  .filter((item, i) => i !== 0)
+                  .map((item) => (
+                    <li>{item}</li>
+                  ))}
               </ul>
             </div>
             <h4 className="offer__title">{vacant.details.offer[0]}</h4>
             <div className="offer__list body">
               <ul>
-                {vacant.details.offer.map((item) => (
-                  <li>{item}</li>
-                ))}
+                {vacant.details.offer
+                  .filter((item, i) => i !== 0)
+                  .map((item) => (
+                    <li>{item}</li>
+                  ))}
               </ul>
             </div>
           </div>
@@ -140,8 +145,8 @@ const Vacant = ({ cardWidth = "90%", cardHeight = "auto" }) => {
         <section className="card__button">
           <Button buttonTitle="Postularme" />
           <p className="card__button--footer">
-            Recibirás un correo de confirmación por parte de Shaily Zappa que te presentará con la empresa
-            que te postulaste
+            Recibirás un correo de confirmación por parte de Shaily Zappa que te
+            presentará con la empresa que te postulaste
           </p>
         </section>
       </Card>
