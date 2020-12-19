@@ -18,13 +18,13 @@ const Table = ({
     <section className="table__section">
       {options.map((option) => (
         <List
-          key={option.id}
+          key={option._id}
           application={application}
-          career={option.career}
-          name={option.name}
+          career={option.branch}
+          name={option.company}
           salary={option.salary}
           coin={option.coin}
-          status={option.status}
+          status="En proceso"
           buttonTitle={buttonTitle}
           listGridTemplateColumns={listGridTemplateColumns}
         />

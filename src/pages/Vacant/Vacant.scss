@@ -1,5 +1,10 @@
 @import "../../styles/global.scss";
 
+.vacanties__card {
+    display: flex;
+    justify-content: center;
+}
+
 .card {
   &__header {
     padding: 15px 65px;
@@ -11,9 +16,22 @@
     padding: 15px 65px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #000;
     &--col1 {
       width: 40%;
     }
+  }
+  &__button {
+      padding: 16px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      &--footer {
+          margin-top: 16px;
+          font-family: $font-primary;
+          font-size: 10px;
+      }
   }
 }
 
