@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import React from "react";
 import "./Home.scss";
 import Carousel from "../../components/Carousel/Carousel";
 import Table from "../../components/Table/Table";
+=======
+import React from 'react'
+import './Home.scss'
+import Carousel from '../../components/Carousel/Carousel'
+import Table from '../../components/Table/Table'
+import Banner from '../../components/Banner/Banner'
+>>>>>>> f034e537ade5b682bb5845f3b4b67f965a31f837
 
 const options = {
   vacancies: [
@@ -55,11 +63,16 @@ const options = {
 const Home = () => {
   return (
     <div className="home">
+<<<<<<< HEAD
       <Carousel
         title="NUEVAS VACANTES"
         options={options.vacancies}
         buttonTitle="POSTULARME"
       />
+=======
+      <Banner ancho="100px"/>
+      <Carousel title="NUEVAS VACANTES" options={options.vacancies} buttonTitle="POSTULARME" />
+>>>>>>> f034e537ade5b682bb5845f3b4b67f965a31f837
       <div className="home__tables">
         <Table
           title="VACANTES DISPONIBLES"

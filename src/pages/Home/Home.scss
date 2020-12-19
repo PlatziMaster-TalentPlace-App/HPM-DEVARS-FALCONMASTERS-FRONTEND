@@ -2,7 +2,7 @@
 
 .home {
   @include displayFlex(column, center, center);
-  padding: 20px;
+  // padding: 20px;
 
   &__tables {
     @include displayFlex(row, center, center);

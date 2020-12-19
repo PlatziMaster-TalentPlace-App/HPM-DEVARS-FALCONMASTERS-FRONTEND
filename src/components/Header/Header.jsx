@@ -20,7 +20,7 @@ const Header = ({ login = true }) => {
                       <button className="btn btn-outline-light btn-sm">INICIAR SESIÓN</button>
                   </Link>
                   :
-                  <Link to="/">
+                  <Link to="/user">
                     <div className="header__avatar">
                       <div className="header__avatar__user">
                         <span className="header__avatar__user__name">USUARIO</span>
@@ -35,7 +35,7 @@ const Header = ({ login = true }) => {
               </div>
               {
                 login &&
-                  <Link to="/">
+                  <Link to="/user">
                     <i className="header__avatar__icons__dashboard">
                       <MdNotifications />
                     </i>
