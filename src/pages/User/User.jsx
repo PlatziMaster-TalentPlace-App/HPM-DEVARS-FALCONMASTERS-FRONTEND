@@ -55,19 +55,19 @@ const User = () => {
         userId: "1",
         name: "Terminar Learning Path",
         description: "Durante los 3 meses intensivos se debera de terminar el Learning Path asignado por tu coach.",
-        endDate: "20/12/2020"
+        endDate: "14/04/2020"
       },
       {
           userId: "2",
           name: "Realiza tu proyecto",
           description: "Has pasado tu etapa intensiva, ahora es necesario poner en practica todo lo que sabes mediante un proyecto en equipo.",
-          endDate: "20/12/2020"
+          endDate: "10/06/2020"
       },
       {
           userId: "3",
           name: "Prepara tu CV y LinkendIn.",
           description: "La etapa productiva comienza ahora, es tiempo de estar preparado.",
-          endDate: "20/12/2020"
+          endDate: "29/07/2020"
       },
       {
           userId: "4",
