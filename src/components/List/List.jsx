@@ -7,7 +7,7 @@ import { FaGlassCheers } from "react-icons/fa";
 import { MdSync } from 'react-icons/md'
 import { Link } from "react-router-dom";
 
-const List = ({ id, application, career, name, salary, coin, status, buttonTitle, listGridTemplateColumns }) => (
+const List = ({ id, application, career, name = "Platzi", salary, coin, status, buttonTitle, listGridTemplateColumns }) => (
     <div className={`list ${ status==='¡Te seleccionarón!' && 'list__selected' }`} style={{ gridTemplateColumns: listGridTemplateColumns }}>
       <Label career={career} />
       <div>{name}</div>
