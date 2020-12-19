@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import './Header.scss'
 import Logo from '../Logo/Logo';
 import { MdAccountCircle, MdNotifications } from "react-icons/md";
+import { AiOutlinePlus } from "react-icons/ai"
 
 const Header = ({ login = true }) => {
     return (
@@ -35,9 +36,9 @@ const Header = ({ login = true }) => {
               </div>
               {
                 login &&
-                  <Link to="/user">
+                  <Link to="/registration-vacancies">
                     <i className="header__avatar__icons__dashboard">
-                      <MdNotifications />
+                      <AiOutlinePlus />
                     </i>
                   </Link>
               }
