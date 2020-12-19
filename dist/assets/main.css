@@ -1,3 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap);
+.home{display:flex;flex-direction:column;justify-content:center;align-items:center}.home__tables{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:30px 0;width:100%;max-width:1200px}
+
+.carousel{max-width:1200px}.carousel__title{padding:10px 30px;width:100%;font-family:"Open Sans",sans-serif;font-size:1em;color:#4c4c4c;font-weight:600}.carousel__cards{display:flex;flex-direction:row;justify-content:center;align-items:center;width:100%}
+
+.card__article{padding:6px 10px;width:260px;height:175px;border:none;border-radius:10px;box-shadow:0 2px 6px #5c5555}.card__article__header{height:36px;text-align:right}.card__article__section{display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;height:94px}.card__article__section p{display:flex;flex-direction:column;justify-content:center;align-items:center;font-family:"Open Sans",sans-serif;font-size:.8em;color:#4c4c4c;font-weight:600;margin-bottom:0;text-align:center}.card__article__footer{height:30px;text-align:center}
+
+.card__article{margin:10px;padding:6px 10px;width:260px;height:175px;border:none;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1);background:#fff}
+
+.label{font-family:"Open Sans",sans-serif;font-size:.6em;color:#fff;font-weight:600;padding:2px 10px;background-color:#ff5652;border-radius:6px}
+
+
+.button{margin:0 10px;padding:6px 10px;width:200px;height:42px;font-family:"Open Sans",sans-serif;font-size:1em;color:#fff;font-weight:500;background-color:#98ca3f;border:none;border-radius:6px}
+
+.table__header{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;margin-left:20px;height:60px;font-family:"Open Sans",sans-serif;font-size:1em;color:#4c4c4c;font-weight:600}.table__section{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;height:340px}.table__footer{display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;height:50px;text-align:center}
+
+.list{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-gap:2px;align-items:center;justify-content:space-around;justify-items:center;width:100%;height:40px;background-color:#fff;border-bottom:1px solid #e0e0e0;font-family:"Open Sans",sans-serif;font-size:1em;color:#4c4c4c;font-weight:600}.list:hover{box-shadow:0 2px 6px #5c5555;transform:scale(1.05)}.list__selected{color:#98ca3f}.list .tooltiptext{position:absolute;visibility:hidden;margin:6px 10px;padding:16px 2px;width:120px;font-family:"Open Sans",sans-serif;font-size:.8em;color:#4c4c4c;font-weight:600;text-align:center;background-color:#f7fafb;border-radius:6px;box-shadow:0 2px 6px #5c5555;z-index:1}.list:hover .tooltiptext{visibility:visible}
+
+
+
+.header{background-color:#98ca3f;padding-right:30px;width:100%;height:70px;display:flex;flex-direction:row;justify-content:space-between;align-items:center;-webkit-box-shadow:0px 5px 4px -3px rgba(166,195,216,0.74);box-shadow:0px 5px 4px -3px rgba(166,195,216,0.74)}.header__logo{margin:0 30px;width:140px}.header__main{display:flex;flex-direction:row;justify-content:center;align-items:center}.header__avatar{display:flex;flex-direction:row;justify-content:center;align-items:right}.header__avatar__user{display:flex;flex-direction:column;justify-content:center;align-items:flex-end}.header__avatar__user__name{font-family:"Open Sans",sans-serif;font-size:.8em;color:#fff;font-weight:500}.header__avatar__user__career{font-family:"Open Sans",sans-serif;font-size:.6em;color:#fff;font-weight:500}.header__avatar__icons__dashboard{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 10px;font-size:2em;color:#fff}.btn-session{margin-right:30px}
+
+.search{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 30px;height:120px;width:100%;background-color:#182c3f;color:#fff}.search__block{display:flex;flex-direction:column;justify-content:space-evenly;align-items:flex-start;max-width:900px}.search__content{display:flex;flex-direction:row;justify-content:space-around;align-items:center;width:100%}
+
+.input__content{display:flex;flex-direction:row;justify-content:center;align-items:center;margin:0 10px;padding:6px 10px;width:300px;height:42px;background-color:#fff;color:#4c4c4c;border-radius:2px}.input__content .input{margin-left:10px;width:100%;height:100%;border:none;border-radius:6px;outline:none}
+
+.select__content{display:flex;flex-direction:row;justify-content:center;align-items:center;margin:0 10px;padding:6px 10px;width:260px;height:42px;background-color:#fff;color:#4c4c4c;border-radius:2px}.select__content .select{margin-left:10px;width:100%;height:100%;border:none;border-radius:6px;outline:none}
+
+.footer{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:0 30px;width:100%;height:70px;color:#fff;background-color:#182c3f}.footer h1{margin:0;font-family:"Open Sans",sans-serif;font-size:.7em;color:#fff;font-weight:500}.footer .header__line{position:absolute;left:0;margin-bottom:80px;background:#98ca3f;width:100%;height:10px;opacity:0.8}
+
+body{margin:0;padding:0;box-sizing:border-box}.section-app{background-color:#f7fafb}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
