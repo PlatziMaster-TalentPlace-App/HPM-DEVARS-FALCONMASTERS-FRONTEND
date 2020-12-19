@@ -1,0 +1,76 @@
+@import "../../styles/global.scss";
+
+.card {
+  &__header {
+    padding: 15px 65px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+  }
+  &__details {
+    padding: 15px 65px;
+    display: flex;
+    justify-content: space-between;
+    &--col1 {
+      width: 40%;
+    }
+  }
+}
+
+.vacant {
+  &__info {
+    &--title {
+      font-family: $font-primary;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &--subtitle {
+      font-family: $font-primary;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    &--salary {
+      color: $secondary-color;
+    }
+  }
+  &__logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--name {
+      font-family: $font-primary;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    &--img {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.benefit__title,
+.description__title,
+.requirements__title,
+.aptitudes__title,
+.skills__title,
+.offer__title {
+    font-family: $font-primary;
+    font-size: 14px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.body, .body ul {
+    font-family: $font-primary;
+    font-size: 14px;
+    list-style: none;
+}
+
+.offer__list ul {
+    color: $secondary-color;
+    list-style: none;
+}
