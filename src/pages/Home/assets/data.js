@@ -1,10 +1,4 @@
-import React from 'react'
-import './Home.scss'
-import Carousel from '../../components/Carousel/Carousel'
-import Table from '../../components/Table/Table'
-import Banner from '../../components/Banner/Banner'
-
-const options = {
+{
   vacancies: [
     {
       id: 1,
@@ -48,18 +42,3 @@ const options = {
     }
   ]
 }
-
-const Home = () => {
-  return (
-    <div className="home">
-      <Banner ancho="100px"/>
-      <Carousel title="NUEVAS VACANTES" options={options.vacancies} buttonTitle="POSTULARME" />
-      <div className="home__tables">
-        <Table title="VACANTES DISPONIBLES" options={options.vacancies} buttonTitle="POSTULARME" listGridTemplateColumns="1fr 1fr 1fr 1fr" />
-        <Table application="true" title="MIS ULTIMAS APLICACIONES" cardWidth="400px" options={options.vacancies} listGridTemplateColumns="1fr 1fr 1fr"/>
-      </div>
-    </div>
-  )
-}
-
-export default Home
